@@ -35,8 +35,8 @@ To set up the project, the following tools and technologies are required:
 # Steps to Setup the Project
 1.**Setup DGX Server:** The project utilizes NVIDIA DGX systems for GPU-powered training and model deployment.<br/>
    
-- Access the DGX server by navigating to the IP address in your web browser:
-       > http://<DGX_IP_address>:<application_port>
+- Access the DGX server by navigating to the IP address in your web browser:<br/>
+       > http://<DGX_IP_address>:<application_port><br/>
 - Log in with the required username and password.
 
 2.**Setting Up the Environment (notebook creation):**
