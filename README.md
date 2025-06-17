@@ -5,32 +5,32 @@ The **Intelligent Speed Monitoring and Alert System for Traffic Management** is 
 # Project Aim
 
 The goal of this project is to create an intelligent traffic management system capable of:
-Tracking vehicles and detecting their speed.
-Marking violations when a vehicle exceeds the speed threshold.
-Capturing the frame of the vehicle at the time of violation.
-Automatically recognizing the vehicle’s number plate.
-Sending an email to the concerned authority with the captured frame and vehicle number as an attachment.
+- Tracking vehicles and detecting their speed.
+- Marking violations when a vehicle exceeds the speed threshold.
+- Capturing the frame of the vehicle at the time of violation.
+- Automatically recognizing the vehicle’s number plate.
+- Sending an email to the concerned authority with the captured frame and vehicle number as an attachment.
 
 # Requirements
 
 To set up the project, the following tools and technologies are required:
 
-**DGX Server:** This powerful server is equipped with high-end NVIDIA GPUs, ideal for processing large volumes of video data and training AI models quickly.<br/>
+- **DGX Server:** This powerful server is equipped with high-end NVIDIA GPUs, ideal for processing large volumes of video data and training AI models quickly.<br/>
 **Technologies:**<br/>
 - **Python 3.8:** Primary language used for backend development and real-time processing.<br/>
-**Flask:** Lightweight web framework for deploying the application as a web service.<br/>
-**PyTorch:** Deep learning framework used for training and deploying the vehicle number plate recognition model.<br/>
-**OpenCV:** Used for real-time video frame processing to detect vehicles and capture frames of violations.<br/>
-**SCP and SSH:** Secure file transfer and remote access tools for managing files and working on the DGX server.<br/>
+- **Flask:** Lightweight web framework for deploying the application as a web service.<br/>
+- **PyTorch:** Deep learning framework used for training and deploying the vehicle number plate recognition model.<br/>
+- **OpenCV:** Used for real-time video frame processing to detect vehicles and capture frames of violations.<br/>
+- **SCP and SSH:** Secure file transfer and remote access tools for managing files and working on the DGX server.<br/>
 
 # Technologies Used
 
-**Python 3.8:** Python serves as the core programming language for the system, handling video processing, speed detection, violation marking, and number plate recognition.<br/>
-**Flask:** A web framework that makes it easy to deploy the system as a service, where users can monitor violations and receive alerts.<br/>
-**PyTorch:** Used to train the deep learning model for vehicle number plate recognition. PyTorch’s powerful GPU capabilities make it suitable for AI applications.<br/>
-**OpenCV:** This library enables real-time video processing for vehicle tracking, speed detection, and violation capture.<br/>
-**NVIDIA DGX Server:** With powerful GPUs, the DGX system accelerates the training and deployment of AI models, allowing the system to process high-resolution video frames in real-time.<br/>
-**Email System:** Integrated into the system to send automatic violation alerts to the concerned authorities with the captured image and vehicle number.<br/>
+- **Python 3.8:** Python serves as the core programming language for the system, handling video processing, speed detection, violation marking, and number plate recognition.<br/>
+- **Flask:** A web framework that makes it easy to deploy the system as a service, where users can monitor violations and receive alerts.<br/>
+- **PyTorch:** Used to train the deep learning model for vehicle number plate recognition. PyTorch’s powerful GPU capabilities make it suitable for AI applications.<br/>
+- **OpenCV:** This library enables real-time video processing for vehicle tracking, speed detection, and violation capture.<br/>
+- **NVIDIA DGX Server:** With powerful GPUs, the DGX system accelerates the training and deployment of AI models, allowing the system to process high-resolution video frames in real-time.<br/>
+- **Email System:** Integrated into the system to send automatic violation alerts to the concerned authorities with the captured image and vehicle number.<br/>
 
 # Steps to Setup the Project
 1.**Setup DGX Server:** The project utilizes NVIDIA DGX systems for GPU-powered training and model deployment.<br/>
