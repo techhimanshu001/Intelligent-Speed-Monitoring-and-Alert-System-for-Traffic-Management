@@ -35,9 +35,9 @@ To set up the project, the following tools and technologies are required:
 # Steps to Setup the Project
 1.**Setup DGX Server:** The project utilizes NVIDIA DGX systems for GPU-powered training and model deployment.<br/>
    
-    - Access the DGX server by navigating to the IP address in your web browser:
-       >http://<DGX_IP_address>:<application_port>
-    - Log in with the required username and password.
+- Access the DGX server by navigating to the IP address in your web browser:
+       > http://<DGX_IP_address>:<application_port>
+- Log in with the required username and password.
 
 2.**Setting Up the Environment (notebook creation):**
 
@@ -52,7 +52,7 @@ To set up the project, the following tools and technologies are required:
    >python -m venv newenv<br/>
    >source newenv/bin/activate<br/>
 
--Install the required dependencies:
+- Install the required dependencies:
    >pip install -r requirements.txt
 
 4.**Transfer Files to DGX Server:** To transfer files from your local machine to the DGX server, use the scp command:
