@@ -35,33 +35,33 @@ To set up the project, the following tools and technologies are required:
 # Steps to Setup the Project
 1.**Setup DGX Server:** The project utilizes NVIDIA DGX systems for GPU-powered training and model deployment.<br/>
    
-* Access the DGX server by navigating to the IP address in your web browser:
-  > http://<DGX_IP_address>:<application_port>
-* Log in with the required username and password.
+    * Access the DGX server by navigating to the IP address in your web browser:
+       >http://<DGX_IP_address>:<application_port>
+    * Log in with the required username and password.
 
 2.**Setting Up the Environment (notebook creation):**
 
-> RAM: 6GB, CPU: 8 cores, GPU: 1 (with 20GB memory), Environment: test
-> PyTorch Image: Use the appropriate image for PyTorch.
-> Flask Port: 5000 (default).
+   > RAM: 6GB, CPU: 8 cores, GPU: 1 (with 20GB memory), Environment: test<br/>
+   > PyTorch Image: Use the appropriate image for PyTorch.<br/>
+   > Flask Port: 5000 (default).<br/>
 
 3.**Set up the python virtual environment:**
 
->sudo apt update
->sudo apt install python3.8-venv
->python -m venv newenv
->source newenv/bin/activate
+   >sudo apt update<br/>
+   >sudo apt install python3.8-venv<br/>
+   >python -m venv newenv<br/>
+   >source newenv/bin/activate<br/>
 
 *Install the required dependencies:
->pip install -r requirements.txt
+   >pip install -r requirements.txt
 
 4.**Transfer Files to DGX Server:** To transfer files from your local machine to the DGX server, use the scp command:
 
-> scp -r -P <port_number> <local_folder> user@<DGX_IP>:<remote_folder>
+ > scp -r -P <port_number> <local_folder> user@<DGX_IP>:<remote_folder>
 
 5.**Run the System:** After setting up the environment and transferring the necessary files, run the system:
 
-> python3 app.py
+ > python3 app.py
 
 The system will now process live video streams, detect vehicle speeds, mark violations, and trigger email alerts when a violation is detected.
 
